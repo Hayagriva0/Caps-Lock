@@ -4,10 +4,49 @@ A lightweight GNOME Shell extension that shows a beautiful animated popup every 
 
 ---
 
+## Preview
+
+### ⚫ Dynamic Island — Morphing Pill
+![Dynamic Island Style](screenshots/dynamic-island.png)
+
+A black pill at the top-center that morphs open to reveal content, then collapses and fades away.
+
+---
+
+### 🟢 macOS — Circle
+![macOS Style](screenshots/macos.png)
+
+A minimal circle at the top-center of your screen. Icon only, no text.
+
+---
+
+### 🟫 Deepin — Rectangle
+![Deepin Style](screenshots/deepin.png)
+
+A large rounded rectangle center-screen with icon and label.
+
+---
+
+### ⚙️ Preferences
+![Preferences Window](screenshots/prefs.png)
+
+Switch styles instantly from the preferences window — no restart needed.
+
+---
+
 ## Styles
 
+### ⚫ Dynamic Island
+Inspired by Apple's Dynamic Island on iPhone 14 Pro. A black pill at the top-center of your screen that **morphs** from a collapsed state into an expanded pill showing icon + text, then collapses and fades out.
+
+- Position: top-center, just below the panel
+- Shape: morphs from `120px` collapsed pill → `220px` expanded pill
+- Content: icon + `"Caps Lock On"` / `"Caps Lock Off"`
+- Animation: 4-phase morph with chained Clutter easing
+- Theme: always black
+
 ### 🔵 macOS — Circle
-A small, minimal circle at the top-center of your screen. Icon only, no text. Appears instantly and disappears quietly. Inspired by macOS's clean system indicators.
+Inspired by macOS's clean system indicators. A small minimal circle — icon only, no text — that appears and disappears quietly.
 
 - Position: top-center, just below the panel
 - Shape: 56px circle
@@ -15,22 +54,13 @@ A small, minimal circle at the top-center of your screen. Icon only, no text. Ap
 - Theme: follows system light/dark
 
 ### ⬛ Deepin — Rectangle
-A rounded rectangle in the center of your screen showing an icon and label. Inspired by Deepin Linux's elegant notification style.
+Inspired by Deepin Linux's notification style. A large rounded rectangle in the center of your screen with icon and label.
 
 - Position: center of screen
-- Shape: 220×64px rounded rectangle
+- Shape: rounded rectangle with icon + label
 - Content: icon + `"Caps Lock On"` / `"Caps Lock Off"`
 - Animation: scale + fade, 200ms `EASE_OUT_QUAD`
 - Theme: follows system light/dark
-
-### ⚫ Dynamic Island — Morphing Pill
-A black pill at the top-center that morphs open to reveal content, then collapses and fades. Inspired by Apple's Dynamic Island on iPhone 14 Pro.
-
-- Position: top-center, just below the panel
-- Shape: morphs from `120px` collapsed pill → `220px` expanded pill
-- Content: icon + label fades in during expansion
-- Animation: 4-phase morph with chained Clutter easing
-- Theme: always black (as designed)
 
 ---
 
@@ -120,6 +150,7 @@ capslock-indicator@user/
 ├── metadata.json         ← Extension metadata
 ├── stylesheet.css        ← All visual styles
 ├── install.sh            ← One-shot installer
+├── screenshots/          ← Preview images
 └── schemas/
     └── org.gnome.shell.extensions.capslock-indicator.gschema.xml
 ```
@@ -186,4 +217,4 @@ Log out and back in to fully clear the extension from memory.
 
 ## License
 
-MIT — do whatever you want with it.
+GPL-3.0 — see [LICENSE](LICENSE) for details.
