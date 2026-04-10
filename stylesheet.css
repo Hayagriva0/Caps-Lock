@@ -1,0 +1,94 @@
+/* ── macOS Style (Squircle Popup) ─────────────────────────────────────────── */
+
+.capslock-macos {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px; /* half of 56px = perfect circle */
+    /* box-shadow may not render on all GNOME Shell versions */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+.capslock-macos-icon {
+    icon-size: 56px;
+}
+
+
+/* ── Deepin Style (Stack Popup) ─────────────────────────────────────────────── */
+
+.capslock-deepin {
+    width: 144px;
+    height: 144px;
+    border-radius: 28px;
+    padding: 24px 16px 16px 16px;
+    spacing: 12px;
+}
+
+.capslock-deepin-dark {
+    background-color: rgba(20, 20, 24, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    /* box-shadow may not render on all GNOME Shell versions */
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.50);
+}
+
+.capslock-deepin-light {
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    /* box-shadow may not render on all GNOME Shell versions */
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.capslock-deepin-icon {
+    icon-size: 52px;
+}
+
+.capslock-deepin-label {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.2px; /* may not be supported in all St versions */
+}
+
+.capslock-deepin-dark .capslock-deepin-label {
+    color: #FFFFFF;
+}
+
+.capslock-deepin-light .capslock-deepin-label {
+    color: #1a1a1a;
+}
+
+/* ── Dynamic Island Style ─────────────────────────────────────────── */
+
+.capslock-dynamic-island {
+    background-color: rgb(0, 0, 0);
+    /* Phase 1: 120x34px, border-radius 17px */
+    width: 120px;
+    height: 34px;
+    border-radius: 17px;
+    /* box-shadow may not render on all GNOME Shell versions */
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+    transition-duration: 250ms;
+    transition-property: box-shadow;
+}
+
+.capslock-dynamic-island-glow {
+    /* box-shadow may not render on all GNOME Shell versions */
+    box-shadow: 0 0 18px 3px rgba(255, 255, 255, 0.12), 0 4px 24px rgba(0,0,0,0.6);
+}
+
+.capslock-dynamic-island-content {
+    padding: 0 14px;
+    spacing: 8px; /* Gap between icon and label */
+}
+
+.capslock-dynamic-island-icon {
+    icon-size: 20px;
+    color: #FFFFFF;
+}
+
+.capslock-dynamic-island-label {
+    color: #FFFFFF;
+    /* system-ui / -apple-system may not resolve in GNOME Shell St toolkit */
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px; /* may not be supported in all St versions */
+}

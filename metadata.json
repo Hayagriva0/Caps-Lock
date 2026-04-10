@@ -1,0 +1,15 @@
+{
+  "uuid": "capslock-indicator@user",
+  "settings-schema": "org.gnome.shell.extensions.capslock-indicator",
+  "name": "Caps Lock Indicator",
+  "description": "Shows a beautiful animated popup on Caps Lock toggle. Supports macOS, Deepin, and Dynamic Island styles.",
+  "version": 1,
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ]
+}

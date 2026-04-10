@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.capslock-indicator" path="/org/gnome/shell/extensions/capslock-indicator/">
+    <key name="popup-style" type="s">
+      <default>"macos"</default>
+      <summary>Popup Style</summary>
+      <description>Visual style for the Caps Lock indicator (macos or deepin or dynamic-island)</description>
+    </key>
+  </schema>
+</schemalist>
